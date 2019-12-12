@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+<body>
+
+  <div class="body">
+    <form class="formclass"  id="formdetails" target="_self" method="get">
+    <h1>L & D Status</h1>
+    <div class="team_pi_details">
+      <div class="sprint_team">
+        <label for="team_details"  class="label_class">Team</label>
+        <br/>
+        <select class="teams" name="team_details" required>
+          <option value="" selected>--select--</option>
+          <option value="1">Access Denied</option>
+          <option value="2">House of Claims</option>
+          <option value="3">Are we there yet</option>
+          <option value="4">Notorious</option>
+          <option value="5">Central Intelligence</option>
+        </select>
+      </div>
+      <div class="pi">
+        <label for="pi_details"  class="label_class">PI-Number</label>
+        <br/>
+        <select class="pi_number" name="pi_details" required>
+          <option value="" selected>--select--</option>
+          <option value="1">PI-1</option>
+          <option value="2">PI-2</option>
+          <option value="3">PI-3</option>
+          <option value="4">PI-4</option>
+        </select>
+      </div>
+      <div class="sprint" >
+        <label for="sprint_details"  class="label_class">Sprint-Number</label>
+        <br/>
+        <select class="sprint_number"  name="sprint_details" required >
+          <option value=""  selected>--select--</option>
+          <option value="1">SP-1</option>
+          <option value="2">SP-2</option>
+          <option value="3">SP-3</option>
+          <option value="4">SP-4</option>
+          <option value="5">SP-5</option>
+          <option value="6">IP-Sprint</option>
+        </select>
+      </div>
+      <div class="week_no">
+        <label for="Week" class="label_class">Week No</label>
+        <br/>
+        <select  id="week_num" class="week_number" name="Week" required>
+          <option value="0" required>--select--</option>
+          <option value="1">Week-1</option>
+          <option value="2">Week-2</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="sprint_details">
+      <div class="sp_start_dt">
+        <label for="date_start" class="label_class">Sprint Start Date</label>
+        <br/>
+        <input type="date" class= "date_box" name="date_start" required>
+
+      </div>
+      <div class="sp_end_dt">
+        <label for="date_end" class="label_class">Sprint End Date</label>
+        <br/>
+        <input type="date" class= "date_box" name="date_end" required>
+
+      </div>
+      <div class="Test_st_dt">
+        <label for="test_start" class="label_class">Testing Start Date</label>
+        <br/>
+        <input type="date" class= "date_box" name="test_start">
+
+      </div>
+    </div>
+
+    <div class="card_details">
+      <div class="cards_in_sprint">
+        <label for="curn_sp_cds" class="label_class">Cards for Current Sprint</label>
+        <br/>
+        <input type="number" id="curnt_sp_crds" class= "number_box" name="curn_sp_cds" required>
+      </div>
+      <div class="cards_frm_prvs_sprint">
+        <label for="prv_sp_cds"  class="label_class">Cards form Previous Current Sprint</label>
+        <br/>
+        <input type="number"  id="prvs_sp_crds" class= "number_box" name="prv_sp_cds" required>
+      </div>
+      <div class="total_cards">
+        <label for="ttl_cds" class="label_class">Total Number of Cards</label>
+        <br/>
+        <input type="number" id="ttl_sp_crds" class= "number_box" name="ttl_cds">
+      </div>
+      <div class="total_test_cases">
+        <label for="ttl_tcs" class="label_class">Total Number of Test Cases planned</label>
+        <br/>
+        <input type="number" class= "number_box" name="ttl_tcs">
+      </div>
+      <div class="total_cds_executed">
+        <label for="ttl_cds_exe" class="label_class">Number of Cards Executed</label>
+        <br/>
+        <input type="number" class= "number_box" name="ttl_cds_exe" required>
+      </div>
+      <div class="total_tsc_executed">
+        <label for="ttl_tcs_exe" class="label_class">Number of Test Cases Executed</label>
+        <br/>
+        <input type="number" class= "number_box" name="ttl_tcs_exe" required>
+      </div>
+
+    </div>
+
+    <div  id="cmpltn_detls" class="testing_details">
+      <div class="cards_cpmltd">
+        <label for="ttl_cds_cmp" class="label_class">Number of Cards Completed</label>
+        <br/>
+        <input type="number" class= "number_box" name="ttl_cds_cmp">
+      </div>
+      <div class="crds_crry_fwd">
+        <label for="ttl_cds_cry_fwd" class="label_class">Cards moved to Next Sprint</label>
+        <br/>
+        <input type="number" class= "number_box" name="ttl_cds_cry_fwd">
+      </div>
+      <div class="tsc_crry_fwd">
+        <label for="ttl_tcs_cry_fwd" class="label_class">Test Cases moved to Next Sprint</label>
+        <br/>
+        <input type="number" class= "number_box" name="ttl_tcs_cry_fwd">
+      </div>
+
+    </div>
+    <div class="graph">
+      <div class="submit_btn">
+        <input type="submit" value="Submit" class="submit_btnn" onclick="store()">
+      </div>
+    </div>
+  </form>
+  <script type="text/javascript" src="javascript.js">
+
+  </script>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+html{
+  height: 100%;
+}
+
+body{
+  background-color: #333332;
+  font-family: sans-serif;
+  color: white;
+  height: 100%;
+}
+/*-----Body Class-----*/
+.body{
+  padding: 5px;
+  margin: 5px;
+  border: 2px;
+  text-align: center;
+  height: 100%;
+
+}
+
+/*-----header Class-----*/
+h1{
+  border-bottom: 2px solid #00ff89d9;
+  margin: 10px auto;
+  max-width: max-content;
+}
+/*-----main divison Class-----*/
+.team_pi_details,.sprint_details,
+.card_details,.testing_details,.graph{
+  border-bottom: 1px outset grey;
+  padding: 5px;
+  margin:5px;
+  margin-bottom: 30px;
+  border-top: 1px inset grey;
+
+
+}
+/*-----sub divison Class-----*/
+.sprint_team,.pi,.sprint,
+.sp_start_dt,.sp_end_dt,
+.Test_st_dt,.week_no,.cards_in_sprint,
+.cards_frm_prvs_sprint,.total_cards,
+.total_test_cases,.total_tsc_executed,.cards_cpmltd,
+.crds_crry_fwd,.tsc_crry_fwd,.submit_btnn,.total_cds_executed
+{
+  border-bottom: 1px solid grey;
+  padding: 5px;
+  margin:5px;
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 10px;
+
+
+}
+/*-----label Class-----*/
+.label_class,.submit_btnn{
+  border-left: 4px solid #00ff89d9;
+  padding-left: 5px;
+  padding-right: 2px;
+  background-color: #362e2e;
+  margin-bottom:5px;
+  font-size: 20px;
+}
+/*-----inside sub divison Class-----*/
+.teams,.pi_number,.sprint_number,
+.date_box,.week_number,.number_box{
+  border-top:  2px solid #00ff89d9;
+  margin-top: 5px;
+  width: 90%;
+  text-align-last:  center;
+  margin-bottom:5px;
+  font-size: 20px;
+}
+/*-----inside sub divison Class---  diving to four groups -----*/
+.week_no,.sprint_team,.pi,.sprint,
+.cards_in_sprint,
+.cards_frm_prvs_sprint,.total_cards,
+.total_test_cases,.total_tsc_executed,.total_cds_executed
+{
+  width:23%;
+}
+
+.submit_btnn{
+  background-color: #00ff89d9;
+}
